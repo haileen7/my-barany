@@ -38,7 +38,7 @@ on:
   schedule:
     # Rescue only — normally a chained run is already active and this
     # just queues behind it via the concurrency group.
-    - cron: '15 */6 * * *'
+    - cron: '* */6 * * *'
 
 concurrency:
   group: barany-lite
